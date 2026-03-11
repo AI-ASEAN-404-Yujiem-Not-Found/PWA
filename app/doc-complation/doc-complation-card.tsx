@@ -5,7 +5,7 @@ export default function DocComplationCard() {
         <div className='w-full flex flex-col gap-2'>
             <h2 className='text-[16px] font-medium'>Scan/Upload identity card</h2>
             <div className='w-full aspect-362/213 flex flex-col justify-center items-center gap-5 rounded-lg border-2 border-gray-300 border-dashed'>
-                <div className='bg-[#747775] p-3 rounded-lg'>
+                <div className='bg-[#949795] p-3 rounded-lg'>
                     <IoIosAdd className='fill-white w-15 h-15' />
                 </div>
                 <div>

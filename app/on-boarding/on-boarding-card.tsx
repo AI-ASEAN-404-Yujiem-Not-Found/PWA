@@ -15,7 +15,7 @@ export default function OnBoardingCard() {
 
                 <div className='w-full text-[13px]'>
                     <p>Based of your local profile this time, your data suited</p>
-                    <p> for 92% standard kriteria that&apos;s needed. data suited</p>
+                    <p>for 92% standard kriteria that&apos;s needed. data suited</p>
                     <p>for 92% standard kriteria that&apos;s needed.</p>
                 </div>
 
