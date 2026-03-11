@@ -2,13 +2,13 @@ import type { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'PWA 404-Yujiem-Not-Found',
-    short_name: 'PWA 404-Yujiem-Not-Found',
-    description: 'AI Asean 404-Yujiem-Not-Found PWA',
+    name: 'Mahesa AI',
+    short_name: 'Mahesa',
+    description: 'Nisi est minim nulla culpa elit dolore consectetur dolore ex minim.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#000000',
+    theme_color: '#528BFF',
     icons: [
       {
         src: '/icon-192x192.png',

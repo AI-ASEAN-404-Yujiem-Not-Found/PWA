@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "404-Yujiem-Not-Found",
-  description: "AI Asean 404-Yujiem-Not-Found PWA",
+  title: "Mahesa AI",
+  description: "Eiusmod Lorem consequat esse dolore ullamco culpa est.",
+  icons: {
+    icon: "/icon-192x192.png",
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-          {children}
+        {children}
       </body>
     </html>
   );
