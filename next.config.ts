@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {};
 export default withPWA({
   dest: "public",
   // ganti nanti
-  disable: true,
+  disable: false,
   register: true,
   cacheOnFrontEndNav: true,
   aggressiveFrontEndNavCaching: true,
