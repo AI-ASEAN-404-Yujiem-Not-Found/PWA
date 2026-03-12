@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function SplashPage() {
   return (
@@ -15,7 +16,9 @@ function SplashPage() {
         </div>
 
         <div className="w-full flex flex-col justify-center items-center gap-3 text-center pt-15.75">
-          <button className="p-3 w-full max-w-100 bg-[#004868] text-white rounded-md">GET STARTED</button>
+          <button className="p-3 w-full max-w-100 bg-[#004868] text-white rounded-md">
+            <Link href={"/tell-your-need"}>GET STARTED</Link>
+          </button>
           <p className="text-[14px]">I ALREADY HAVE AN ACCOUNT</p>
         </div>
       </div>
