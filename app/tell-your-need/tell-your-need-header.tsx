@@ -1,12 +1,15 @@
+'use client'
 import Image from 'next/image';
 import { FaChevronLeft } from "react-icons/fa";
 import { MdNotificationsNone } from "react-icons/md";
+import { useRouter } from 'next/navigation'
 
 export default function TellYourNeedHeader() {
+    const router = useRouter()
     return (
         <div className='w-full bg-[#B4C9FF] p-5 flex items-start justify-between'>
             <div className='flex items-start gap-3'>
-                <div className='bg-[#298191] p-2 w-9 h-9 rounded-md'>
+                <div className='bg-[#298191] p-2 w-9 h-9 rounded-md' onClick={() => router.back()}>
                     <FaChevronLeft className='w-5 h-5 text-white' />
                 </div>
                 <div className="w-full flex items-end gap-2">

@@ -1,4 +1,3 @@
-import React from 'react';
 import ScreenLayout from '../layouts/screen-layout';
 import GrowthCenterHeader from './growth-center-header';
 import Image from 'next/image';

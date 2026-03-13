@@ -23,8 +23,6 @@ function OnBoardingpage() {
 
           <div className='w-full flex flex-col gap-5 pt-5'>
             <OnBoardingTipsCard />
-            <OnBoardingTipsCard />
-            <OnBoardingTipsCard />
           </div>
 
         </div>

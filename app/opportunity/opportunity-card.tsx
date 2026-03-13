@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaTractor } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
@@ -20,7 +21,9 @@ export default function OpportunityCard() {
             </div>
             <p className='text-[12px] text-gray-600 italic'>This is a bamboo craft business with a target market of...&quot;</p>
             <div className='w-full flex flex-col gap-3 justify-center'>
-                <button className="p-3 w-full max-w-100 bg-[#004868] text-white rounded-md">Apply Now</button>
+                <button className="p-3 w-full max-w-100 bg-[#004868] text-white rounded-md">
+                    <Link href={"/doc-complation"}>Apply Now</Link>
+                </button>
                 <button className="p-3 w-full max-w-100 border border-[#004868] text-[#004868] rounded-md">See Details</button>
             </div>
         </div>

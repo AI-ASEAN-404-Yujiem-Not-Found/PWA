@@ -11,6 +11,7 @@ import { PiBagFill } from "react-icons/pi";
 import { IoIosDocument } from "react-icons/io";
 import useIsMobile from '../hook/isMobile';
 import DesktopNoPreview from '../components/desktop-no-preview';
+import Link from 'next/link';
 
 
 function GrowthCenterResultPage() {
@@ -81,7 +82,7 @@ function GrowthCenterResultPage() {
         </div>
 
         <div className='w-full p-3 flex items-center justify-between gap-3'>
-          <button className='w-full rounded-md p-2 text-[14px] bg-gray-300'>Change Data</button>
+          <Link href={'/chance-form'} className='w-full text-center rounded-md p-2 text-[14px] bg-gray-300'>Change Data</Link>
           <button className='w-full rounded-md p-2 text-[14px] bg-[#005D85] text-white'>Claim Now</button>
         </div>
       </div>

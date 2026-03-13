@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ScreenLayout from '../layouts/screen-layout';
 import ChanceFormHeader from './chance-form-header';
 import ChanceFormProgress from './chance-form-progress';
@@ -21,9 +22,9 @@ function ChanceFormPage() {
           </div>
 
           <div className='w-full space-y-3 pt-5'>
-            <ChanceFormRadio />
-            <ChanceFormRadio />
-            <ChanceFormRadio />
+            <ChanceFormRadio content='1 - 3 Tails' />
+            <ChanceFormRadio content='4 - 10 Tails' />
+            <ChanceFormRadio content='>10 Tails' />
           </div>
 
           <div className='w-full flex flex-col gap-3 py-5'>
@@ -36,7 +37,7 @@ function ChanceFormPage() {
             <button
               className='p-3 w-full max-w-100 text-[#004868] border-2 border-[#004868] border-dashed rounded-md'
             >
-              <p className='text-[14px]'>Try It First</p>
+              <Link href={"/growth-center-result"} className='text-[14px]'>Try It First</Link>
             </button>
           </div>
 

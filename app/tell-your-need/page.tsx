@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable react-hooks/preserve-manual-memoization */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client"
@@ -127,7 +126,7 @@ function TellYourNeedPage() {
 
           <div className="w-full flex flex-col justify-center items-center gap-3 text-center pt-15.75">
             <button className="p-2 w-full max-w-100 bg-[#004868] text-white rounded-md">
-              <Link href={"/opportunity"}>Continue</Link>
+              <Link href={"/on-boarding"}>Continue</Link>
             </button>
             <p className="text-[12px] text-gray-600">
               Need help?{' '}
