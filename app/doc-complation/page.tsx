@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaChevronLeft } from "react-icons/fa6";
 import { MdNotificationsNone } from "react-icons/md";
@@ -282,17 +283,20 @@ export default function DocComplationPage() {
         <OtherNeedsInput />
 
         {/* Continue button */}
-        <button style={{
-          width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
-          background: "#004868", color: "white", border: "none",
-          borderRadius: 8, padding: "14px 18px", fontSize: 15, fontWeight: 500, cursor: "pointer",
-          boxSizing: "border-box"
-        }}>
-          Continue Process <ArrowRight />
-        </button>
+        <Link href={"/explore-ways"}>
+          <button style={{
+            width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10,
+            background: "#004868", color: "white", border: "none",
+            borderRadius: 8, padding: "14px 18px", fontSize: 15, fontWeight: 500, cursor: "pointer",
+            boxSizing: "border-box"
+          }}>
+
+            Continue Process <ArrowRight />
+          </button>
+        </Link>
       </div>
 
       <BottomNav />
-    </div>
+    </div >
   );
 }

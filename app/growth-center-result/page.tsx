@@ -83,7 +83,7 @@ function GrowthCenterResultPage() {
 
         <div className='w-full p-3 flex items-center justify-between gap-3'>
           <Link href={'/chance-form'} className='w-full text-center rounded-md p-2 text-[14px] bg-gray-300'>Change Data</Link>
-          <button className='w-full rounded-md p-2 text-[14px] bg-[#005D85] text-white'>Claim Now</button>
+          <Link href={'/save-mode'} className='w-full text-center rounded-md p-2 text-[14px] bg-[#005D85] text-white'>Claim Now</Link>
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 import ScreenLayout from '../layouts/screen-layout';
 import { IoMdCloudDone, IoMdMenu } from 'react-icons/io';
-import {FaChevronDown } from 'react-icons/fa6';
+import { FaChevronDown } from 'react-icons/fa6';
 import { FaTractor } from 'react-icons/fa';
 import ExploreWaysHeader from './explore-ways-header';
+import Link from 'next/link';
 
 function ExploreWaysPage() {
   return (
@@ -74,7 +75,9 @@ function ExploreWaysPage() {
                   </div>
                 </div>
                 <div className='w-full flex justify-end items-end'>
-                  <button className='text-white p-2 rounded-md bg-[#005D85] text-[12px] px-5'>Start Now</button>
+                  <Link href={"/on-boarding"}>
+                    <button className='text-white p-2 rounded-md bg-[#005D85] text-[12px] px-5'>Start Now</button>
+                  </Link>
                 </div>
               </div>
 
