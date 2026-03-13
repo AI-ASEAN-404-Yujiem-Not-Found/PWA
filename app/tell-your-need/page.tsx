@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/preserve-manual-memoization */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client"
@@ -32,14 +34,20 @@ function TellYourNeedPage() {
     recognition.onstart = () => setIsListening(true);
 
     recognition.onresult = (e: any) => {
-      let final = '';
       let interim = '';
-      for (let i = 0; i < e.results.length; i++) {
+      let final = transcript;
+
+      for (let i = e.resultIndex; i < e.results.length; i++) {
         const text = e.results[i][0].transcript;
-        if (e.results[i].isFinal) final += text + ' ';
-        else interim += text;
+
+        if (e.results[i].isFinal) {
+          final += text + ' ';
+        } else {
+          interim += text;
+        }
       }
-      if (final) setTranscript(final.trim());
+
+      setTranscript(final.trim());
       setInterimTranscript(interim);
     };
 
@@ -82,19 +90,16 @@ function TellYourNeedPage() {
             {/* Mic button */}
             <button
               onClick={handleMicClick}
-              className={`w-37.25 h-37.25 rounded-full flex justify-center items-center transition-all duration-300 ${
-                isListening ? 'bg-[#FFE4E4] animate-pulse' : 'bg-[#E4F5FF]'
-              }`}
+              className={`w-37.25 h-37.25 rounded-full flex justify-center items-center transition-all duration-300 ${isListening ? 'bg-[#FFE4E4] animate-pulse' : 'bg-[#E4F5FF]'
+                }`}
             >
               <div
-                className={`w-27.5 h-27.5 rounded-full flex justify-center items-center transition-all duration-300 ${
-                  isListening ? 'bg-[#FFB2B2]' : 'bg-[#B2E3FF]'
-                }`}
+                className={`w-27.5 h-27.5 rounded-full flex justify-center items-center transition-all duration-300 ${isListening ? 'bg-[#FFB2B2]' : 'bg-[#B2E3FF]'
+                  }`}
               >
                 <PiMicrophoneFill
-                  className={`w-17.5 h-17.5 transition-colors duration-300 ${
-                    isListening ? 'text-red-500' : 'text-[#003A53]'
-                  }`}
+                  className={`w-17.5 h-17.5 transition-colors duration-300 ${isListening ? 'text-red-500' : 'text-[#003A53]'
+                    }`}
                 />
               </div>
             </button>
