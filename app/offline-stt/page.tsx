@@ -24,7 +24,7 @@ function OfflineSTTPage() {
 
                     <div className="w-full flex flex-col justify-center items-center gap-3 text-center pt-15.75">
                         <button className="p-2 w-full max-w-100 bg-[#004868] text-white rounded-md">
-                            <Link href={"/on-boarding"}>Continue</Link>
+                            <Link href={"/welcoming"}>Continue</Link>
                         </button>
                         <p className="text-[12px] text-gray-600">
                             Need help?{' '}
