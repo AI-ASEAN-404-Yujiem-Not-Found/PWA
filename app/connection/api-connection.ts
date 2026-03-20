@@ -83,24 +83,3 @@ export interface ErrorResponseAPI {
     message?: string;
     msg?: string;
 }
-
-export interface TestGetAPIResponse {
-    msg: string;
-    data: {
-        price: number;
-        tax: number;
-        description: number;
-    }
-}
-
-export interface TestPostBodyRequest {
-    name: string;
-    description: string;
-    price: number;
-    tax: number;
-}
-
-export interface TestPostResponse {
-    msg: string;
-    id: number;
-}

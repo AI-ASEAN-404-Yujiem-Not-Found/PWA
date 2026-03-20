@@ -20,9 +20,10 @@ function OfflineSTTPage() {
                         </h2>
                     </div>
 
+
                     <OflineSTTMicrophone />
 
-                    <div className="w-full flex flex-col justify-center items-center gap-3 text-center pt-15.75">
+                    {/* <div className="w-full flex flex-col justify-center items-center gap-3 text-center pt-15.75">
                         <button className="p-2 w-full max-w-100 bg-[#004868] text-white rounded-md">
                             <Link href={"/welcoming"}>Continue</Link>
                         </button>
@@ -30,7 +31,7 @@ function OfflineSTTPage() {
                             Need help?{' '}
                             <span className='font-semibold text-[#005D85]'>Contact village assistance</span>
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <BottomNavigation />
