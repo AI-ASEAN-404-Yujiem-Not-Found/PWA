@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import LayoutSpacing from '../components/layout-spacing';
 import BottomNavigation from '../components/bottom-navigation';
 import HeaderBack from '../components/header-back';

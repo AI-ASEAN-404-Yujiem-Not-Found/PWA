@@ -14,7 +14,7 @@ function OpportunityPage() {
     return (
         <LayoutSpacing>
             <HeaderBack title='Opportunity' />
-            <div className='w-full pb-8'>
+            <div className='w-full pb-16'>
                 <div className='py-2 bg-white px-5'>
 
                     <OfflineBadge />
@@ -63,9 +63,21 @@ function OpportunityPage() {
                         </p>
 
                         <div className='w-full space-y-3'>
-                            <OpportunityCard />
-                            <OpportunityCard />
-                            <OpportunityCard />
+                            <OpportunityCard
+                                title='Loan capital for superior rice seeds'
+                                rec='Recommended by the village cooperative'
+                                detail='This is a bamboo craft business with a target market of something'
+                            />
+                            <OpportunityCard
+                                title='Loan capital for superior rice seeds'
+                                rec='Recommended by the village cooperative'
+                                detail='This is a bamboo craft business with a target market of something'
+                            />
+                            <OpportunityCard
+                                title='Loan capital for superior rice seeds'
+                                rec='Recommended by the village cooperative'
+                                detail='This is a bamboo craft business with a target market of something'
+                            />
                         </div>
 
                     </div>
