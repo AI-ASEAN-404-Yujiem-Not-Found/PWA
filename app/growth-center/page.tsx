@@ -9,6 +9,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { IoMdCheckmark } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { FaUnlock } from "react-icons/fa";
+import Link from "next/link";
 
 export default function GrowthCenterPage() {
     return (
@@ -102,10 +103,10 @@ export default function GrowthCenterPage() {
                 </div>
 
                 <div className='w-full flex flex-col gap-2'>
-                    <button className="p-2 w-full max-w-100 bg-[#004868] text-white rounded-md flex items-center gap-2 justify-center">
+                    <Link href={'/explore-ways'} className="p-2 w-full max-w-100 bg-[#004868] text-white rounded-md flex items-center gap-2 justify-center">
                         <p>Continue Process</p>
                         <FaChevronRight className='w-4 h-4 fill-white' />
-                    </button>
+                    </Link>
                     <button className="p-2 w-full max-w-100 border-2 border-[#004868] text-[#004868] border-dashed rounded-md flex items-center gap-2 justify-center">
                         Try Send It Again
                     </button>

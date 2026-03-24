@@ -24,7 +24,7 @@ export default function OpportunityCard() {
                 <div className='w-full flex items-center justify-between gap-4 pt-5'>
                     <button className='bg-gray-300 w-full p-2 rounded-md'>Listen</button>
                     <button className='bg-[#004868] w-full text-white p-2 rounded-md'>
-                        <Link href={"/chance-form"}>Claim Now</Link>
+                        <Link href={"/doc-complation"}>Claim Now</Link>
                     </button>
                 </div>
             </div>
