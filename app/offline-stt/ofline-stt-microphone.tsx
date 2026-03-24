@@ -4,6 +4,7 @@
 "use client"
 
 import React, { useState, useRef, useCallback } from 'react';
+import { useRouter } from 'next/router'
 
 import { PiMicrophoneFill } from "react-icons/pi";
 import { usePostData } from '../connection/connection-hook';
@@ -14,6 +15,7 @@ export default function OflineSTTMicrophone() {
     const [transcript, setTranscript] = useState('');
     const [interimTranscript, setInterimTranscript] = useState('');
     const recognitionRef = useRef<any>(null);
+    const router = useRouter()
 
     const startListening = useCallback(() => {
         const SpeechRecognition =
@@ -73,8 +75,10 @@ export default function OflineSTTMicrophone() {
 
     const { exec, data, err, loading } = usePostData<SSTResponse, SSTBodyRequest>()
 
-    const handleNextAndProcess = async () => {
-        await exec("/sst-process", { message: displayText, role: "farmer" })
+    const handleNextAndProcess = async (e: React.FormEvent) => {
+        await exec("/sst-process", { message: displayText, role: "farmer" });
+        e.preventDefault();
+        router.push("/welcoming")
     }
 
     if (loading) return <div className='w-screen h-screen flex justify-center items-center'>loading</div>
